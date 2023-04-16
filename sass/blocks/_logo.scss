@@ -1,0 +1,11 @@
+.logo {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1;
+   color: #000000;
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      display: block;
+   }
+}

@@ -1,0 +1,94 @@
+html {
+   min-height: 100vh; /* sticky footer */
+   scroll-behavior: smooth;
+}
+
+body {
+   min-height: 100vh; /* sticky footer */
+   display: flex; /* sticky footer */
+   flex-direction: column; /* sticky footer */
+
+   position: relative;
+
+   font-family: "Montserrat", sans-serif;
+   color: #000;
+   font-size: 16px;
+
+   text-rendering: optimizeSpeed;
+   //text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+
+   &.noscroll {
+      overflow: hidden;
+   }
+}
+
+body > * {
+   flex-shrink: 0; /* sticky footer */
+}
+
+section {
+   // position: relative;
+}
+
+// Desktop
+.container {
+   width: 1140px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+
+   &--fluid {
+      max-width: unset;
+   }
+
+   &--no-padding {
+      padding: 0;
+   }
+
+   /* Tablet Big */
+   @media (max-width: 1139px) {
+      width: 900px;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      width: 768px;
+   }
+
+   /* Mobile */
+   @media (max-width: 767px) {
+      width: 320px;
+   }
+}
+
+/* Utility */
+
+.none {
+   display: none !important;
+}
+
+.visually-hidden {
+   opacity: 0;
+   visibility: hidden;
+   width: 0px;
+   height: 0px;
+   display: block;
+   margin-left: -10000px;
+   background: transparent;
+   font-size: 0;
+}
+
+.activeis {
+   display: none;
+}
+
+/* Sticky Footer */
+
+.footer {
+   margin-top: auto; /* sticky footer */
+}

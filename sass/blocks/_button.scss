@@ -1,0 +1,46 @@
+.button {
+   display: inline-block;
+   height: 64px;
+
+   padding: 0 40px;
+
+   background: #fbdc4d;
+   border-radius: 50px;
+
+   color: #000;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 64px;
+   white-space: nowrap;
+   overflow: hidden;
+   transition: background-color 0.2s ease-in, color 0.2s ease-in;
+
+   &:hover,
+   :focus {
+      background-color: #ffeb8d;
+   }
+
+   &:active {
+      background-color: #f5d22d;
+   }
+
+   /* Tablet Big */
+   @media (max-width: 1139px) {
+      padding: 0 26px;
+      height: 58px;
+      line-height: 58px;
+   }
+}
+
+.button--light {
+   background: #eff7fc;
+
+   &:hover,
+   :focus {
+      background-color: #d1edff;
+   }
+
+   &:active {
+      background-color: #b0dcf8;
+   }
+}
