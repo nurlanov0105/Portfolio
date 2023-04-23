@@ -124,13 +124,13 @@ $(document).ready(function () {
    //    easing: "swing",
    // });
 
-   // let containerEl = document.querySelector("#cards-row");
+   let containerEl = document.querySelector("#cards-row");
 
-   // let mixer = mixitup(containerEl, {
-   //    classNames: {
-   //       block: "",
-   //    },
-   // });
+   let mixer = mixitup(containerEl, {
+      classNames: {
+         block: "",
+      },
+   });
 });
 
 window.addEventListener("scroll", () => {
