@@ -761,8 +761,6 @@ body > * {
   margin-top: 10px;
 }
 
-<<<<<<< HEAD
-=======
 .portfolio-card:nth-child(1),
 .portfolio-card:nth-child(2) {
   width: 540px;
@@ -870,7 +868,6 @@ body > * {
   }
 }
 
->>>>>>> d8926a5 (first commit)
 .portfolio-card__title {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
@@ -1639,12 +1636,6 @@ body > * {
 
 .mix-block {
   margin-top: 30px;
-  /* Tablet Big */
-}
-@media (max-width: 1139px) {
-  .mix-block {
-    display: none;
-  }
 }
 
 .mix-block__btn {
