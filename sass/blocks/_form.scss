@@ -1,0 +1,136 @@
+.form {
+   display: flex;
+   flex-direction: column;
+
+   position: relative;
+   z-index: 1;
+
+   padding: 62px 50px 50px;
+   width: 540px;
+   background-color: #fff;
+   box-shadow: 0px 20px 100px -10px rgba(160, 206, 237, 0.75);
+
+   .form__item + .form__item {
+      margin-top: 42px;
+
+      /* Mobile */
+      @media (max-width: 767px) {
+         margin-top: 40px;
+      }
+   }
+
+   /* Tablet Big */
+   @media (max-width: 1139px) {
+      width: 420px;
+      .button {
+         width: 100%;
+      }
+   }
+
+   /* Mobile*/
+   @media (max-width: 768px) {
+      width: 290px;
+      padding: 44px 15px 40px;
+   }
+
+   .button {
+      background: #fbdc4d;
+
+      &:hover,
+      :focus {
+         background-color: #ffeb8d;
+      }
+
+      &:active {
+         background-color: #f5d22d;
+      }
+   }
+}
+
+.form__item {
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+
+.form__custom-placeholder {
+   position: absolute;
+   top: 0;
+   left: 0;
+
+   pointer-events: none;
+
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 1;
+   color: #9d9d9d;
+
+   transition: 0.2s ease;
+
+   /* Mobile */
+   @media (max-width: 767px) {
+      font-size: 18px;
+   }
+}
+
+.custom-placeholder {
+   position: absolute;
+   top: -20px;
+
+   font-weight: 700;
+   font-size: 16px;
+   color: #eca73f;
+}
+
+.form__field {
+   height: 40px;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 1.3;
+   color: #000000;
+
+   border-bottom: 2px solid #e5e5e5;
+   transition: border-bottom 0.2s ease;
+
+   &:active,
+   &:focus {
+      font-weight: 700;
+      border-bottom: 2px solid #ff543e;
+   }
+
+   /* Mobile */
+   @media (max-width: 767px) {
+      height: 30px;
+      font-size: 16px;
+   }
+}
+
+.form__input {
+   // min-height: 39px;
+}
+
+.form__textarea {
+   height: 162px;
+   resize: none;
+   font-weight: 400;
+
+   &:focus {
+      outline: none;
+   }
+
+   /* Mobile */
+   @media (max-width: 767px) {
+      height: 188px;
+   }
+}
+
+.form__button {
+   margin-top: 30px;
+}
+
+.error {
+   padding-top: 5px;
+   font-size: 14px;
+   font-weight: 700;
+   color: #ff543e;
+}

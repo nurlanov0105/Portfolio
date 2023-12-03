@@ -1,0 +1,23 @@
+.gradient-line {
+   display: inline;
+   background-repeat: no-repeat;
+   background-position: left bottom 15px;
+   background-size: 100% 12px;
+   background-image: linear-gradient(to right, #fbdc4d, #fbdc4d);
+
+   /* Tablet Big */
+   @media (max-width: 1139px) {
+      background-position: left bottom 10px;
+      background-size: 100% 8px;
+   }
+
+   /* Tablet Small*/
+   @media (max-width: 899px) {
+      background-position: left bottom 6px;
+   }
+
+   /* Mobile */
+   @media (max-width: 767px) {
+      background-position: left bottom 3px;
+   }
+}
